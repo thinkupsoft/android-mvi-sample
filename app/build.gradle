@@ -1,0 +1,173 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.firebase.crashlytics'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+    id 'com.google.firebase.firebase-perf'
+    id 'com.google.firebase.appdistribution'
+}
+
+android {
+    compileSdk versions.compileSdk
+    flavorDimensions flavors.environment
+
+    defaultConfig {
+        applicationId "com.thinkup.mvi"
+        minSdk versions.minSdk
+        targetSdk versions.targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias = 'mvisample'
+            storePassword 'XXYYZZ'
+            keyPassword 'XXYYZZ'
+            storeFile file('../keystore/mvikeystore.jks')
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            firebaseAppDistribution {
+                artifactType = "AAB"
+                groups = "QA"
+                serviceCredentialsFile SERVICE_CREDENTIALS_FILE
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_compiler_version
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    productFlavors {
+        production {
+            dimension flavors.environment
+            versionCode app.prodVersionCode
+            versionName app.prodVersionName
+            firebaseAppDistribution {
+                appId = APP_PROD_FIREBASE_ID
+                releaseNotesFile = "changelog/${app.prodVersionName}.txt"
+            }
+        }
+        staging {
+            dimension flavors.environment
+            applicationIdSuffix ".staging"
+            versionCode app.stgVersionCode
+            versionName app.stgVersionName
+            versionNameSuffix app.stgVersionNameSuffix
+            firebaseAppDistribution {
+                appId = APP_STG_FIREBASE_ID
+                releaseNotesFile = "changelog/${app.stgVersionName}${app.stgVersionNameSuffix}.txt"
+            }
+        }
+        dev {
+            dimension flavors.environment
+            applicationIdSuffix ".develop"
+            versionCode app.devVersionCode
+            versionName app.devVersionName
+            versionNameSuffix app.devVersionNameSuffix
+            firebaseAppDistribution {
+                appId = APP_DEV_FIREBASE_ID
+                releaseNotesFile = "changelog/${app.devVersionName}${app.devVersionNameSuffix}.txt"
+            }
+        }
+    }
+}
+
+dependencies {
+    // TKUP common
+    implementation project(path: ":common")
+    // TKUP models
+    implementation project(path: ":models")
+    // TKUP services
+    implementation project(path: ":services")
+    // TKUP storage
+    implementation project(path: ":storage")
+
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_runtime_ktx_version"
+    implementation "androidx.activity:activity-compose:$activity_compose_version"
+    // Import the BoM for the Firebase platform
+    implementation platform("com.google.firebase:firebase-bom:$firebase_bom_version")
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-dynamic-links'
+    implementation 'com.google.firebase:firebase-perf-ktx'
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$log_retrofit_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"
+    // Compose
+    // Tooling support (Previews, etc.)
+    implementation("androidx.compose.ui:ui-tooling:$compose_version")
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    // ConstraintLayout-compose
+    implementation("androidx.constraintlayout:constraintlayout-compose:$constraint_layout_compose_version")
+    // Coil
+    implementation "io.coil-kt:coil-compose:$coil_compose"
+    implementation "io.coil-kt:coil-svg:$coil_compose"
+    //Nav
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+    //Material3
+    implementation "androidx.compose.material3:material3:$material3_version"
+    // Material Design
+    implementation("androidx.compose.material:material:$compose_version")
+    // Material design icons
+    implementation("androidx.compose.material:material-icons-core:$compose_version")
+    implementation("androidx.compose.material:material-icons-extended:$compose_version")
+    // Accompanist
+    implementation "com.google.accompanist:accompanist-pager:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-pager-indicators:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_systemui_version"
+    implementation "com.google.accompanist:accompanist-insets-ui:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-navigation-animation:$accompanist_nav_animation_version"
+    implementation "com.google.accompanist:accompanist-swiperefresh:$accompanist_swipe_version"
+    implementation "com.google.accompanist:accompanist-permissions:$accompanist_permission_version"
+    implementation "com.google.accompanist:accompanist-flowlayout:$accompanist_flow_version"
+    implementation "com.google.accompanist:accompanist-pager:$accompanist_pager_version"
+    implementation "com.google.accompanist:accompanist-pager-indicators:$accompanist_pager_version"
+    //Paging 3.0
+    implementation "androidx.paging:paging-compose:$paging_compose_version"
+
+    //Dagger hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$hilt_lifecycle_version"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_nav_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_compiler_version"
+
+    // Lottie compose
+    implementation "com.airbnb.android:lottie-compose:$lottie_version"
+}
+apply plugin: 'com.google.gms.google-services'

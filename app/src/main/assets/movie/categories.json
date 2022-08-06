@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Drama",
+      "slug": "drama"
+    },
+    {
+      "id": 2,
+      "name": "Action",
+      "slug": "action"
+    },
+    {
+      "id": 3,
+      "name": "Comedy",
+      "slug": "comedy"
+    }
+  ]
+}

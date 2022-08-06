@@ -1,0 +1,16 @@
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjE0LCJpYXQiOjE2NTUyMDYzNDEsImV4cCI6MTY1NTI5Mjc0MX0.TRHu2VoClmV_Aijb7ANO5a7Z8lDon67NG8F34m2ExB0",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjE0LCJpYXQiOjE2NTUyMDYzNDF9.S8RB5uWAj1hTkAIiy4vfTKw6Lg5EFz8yXKV230us-30",
+  "user": {
+    "id": 14,
+    "name": "Nicolas Castro",
+    "email": "castronico90@gmail.com",
+    "username": "castronico",
+    "avatar": "https://avatars.dicebear.com/api/initials/NC.png?background=%2315E5BD&radius=50",
+    "active": true,
+    "last_login_date": "2022-06-14T11:32:21.826Z",
+    "updatedAt": "2022-06-14T11:32:21.826Z",
+    "createdAt": "2022-06-09T20:24:38.000Z",
+    "type": 1
+  }
+}

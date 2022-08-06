@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_error">¡Algo salió mal!</string>
+    <string name="app_503_error_title">Actualmente no estamos disponibles.</string>
+    <string name="app_503_error_message">¡Por favor, revise luego!</string>
+    <string name="session_expired">¡Su sesión ha expirado!\Vuelva a iniciar sesión</string>
+
+    <!-- Common -->
+    <string name="sign_in_uppercase">INICIAR SESIÓN</string>
+    <string name="register_uppercase">REGISTRARSE</string>
+    <string name="get_movie_uppercase">BUSCAR UN PELÍCULA</string>
+    <string name="put_movie_uppercase">SUBIR UN PELÍCULA</string>
+    <string name="explore_more_uppercase">EXPLORAR MÁS</string>
+    <string name="logout">CERRAR SESIÓN</string>
+    <string name="save">GUARDAR</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="well_done">¡BIEN HECHO!</string>
+    <string name="manually">MANUALMENTE</string>
+    <string name="change_password">CAMBIAR CONTRASEÑA</string>
+    <string name="no_matches_search">No se encontraron coincidencias para su búsqueda</string>
+    <string name="no_internet">Sin conexión a Internet</string>
+    <string name="retry">Reintentar</string>
+    <string name="camera">CÁMARA</string>
+    <string name="gallery">GALERÍA</string>
+    <string name="success">¡Éxito!</string>
+    <string name="saving">Guardando&#8230;</string>
+    <string name="no_data">Sin datos</string>
+
+    <!-- Errors -->
+    <string name="invalid_name">El nombre no puede estar vacío</string>
+    <string name="invalid_email">Email inválido</string>
+    <string name="invalid_password">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="invalid_repeat_password">Las contraseñas no coinciden</string>
+    <string name="invalid_username">Nombre de usuario ya en uso</string>
+    <string name="username_used">Nombre de usuario ya en uso</string>
+    <string name="required_field">Campo requerido</string>
+    <string name="invalid_date">Fecha inválida</string>
+    <string name="required_field_one">Requiere al menos una</string>
+
+    <!-- Tabs -->
+    <string name="tab_home_name">Inicio</string>
+    <string name="tab_movies_name">Películas</string>
+    <string name="tab_notifications_name">Notificaciones</string>
+    <string name="tab_profile_name">Perfil</string>
+
+    <!-- Home Tab -->
+    <string name="home_register_link1">¿No tienes una cuenta?</string>
+    <string name="home_register_link2">Registrarse</string>
+    <string name="home_empty_featured">Aun no tenemos películas</string>
+    <string name="home_title_featured">Películas destacados</string>
+    <string name="home_title_my_movies">Mis películas</string>
+
+    <!-- Profile Tab -->
+    <string name="profile_email">Correo electrónico</string>
+    <string name="profile_username">Nombre de usuario</string>
+    <string name="profile_last_login">Último inicio de sesión</string>
+    <string name="profile_change_password">CAMBIAR CONTRASEÑA</string>
+    <string name="profile_delete_account">Eliminar cuenta</string>
+    <string name="profile_logout_msg">¿Está seguro de que desea cerrar la sesión?</string>
+    <string name="profile_success_msg">PERFIL ACTUALIZADO CON ÉXITO</string>
+
+    <!-- Login popup -->
+    <string name="login_forgot_pass">¿Olvidó su contraseña?</string>
+    <string name="login_email_placeholder">Email</string>
+    <string name="login_password_placeholder">Contraseña</string>
+    <string name="login_success">INICIO DE SESIÓN CON ÉXITO</string>
+    <string name="login_fail">FALLÓ EL INICIO DE SESIÓN</string>
+
+    <!-- Ventana emergente de registro -->
+    <string name="register_name_placeholder">Nombre</string>
+    <string name="register_email_placeholder">Email</string>
+    <string name="register_password_placeholder">Contraseña</string>
+    <string name="register_repeat_password_placeholder">Repetir contraseña</string>
+    <string name="register_success">REGISTRO EXITOSO</string>
+    <string name="register_fail">REGISTRO FALLIDO</string>
+
+    <!-- Edit profile -->
+    <string name="edit_profile_title">Editar perfil</string>
+    <string name="edit_profile_name_placeholder">Nombre</string>
+    <string name="edit_profile_username_placeholder">Nombre de usuario</string>
+    <string name="edit_profile_failed">EDICIÓN FALLIDA</string>
+    <string name="edit_profile_success">PERFIL ACTUALIZADO CON ÉXITO</string>
+
+    <!-- Delete account -->
+    <string name="delete_account_title">¿Estás seguro?</string>
+    <string name="delete_account_message">Tu cuenta se desactivará inmediatamente.\n\nEsta acción no se puede deshacer.</string>
+    <string name="delete_account_button">ELIMINAR CUENTA</string>
+
+    <!-- Change password -->
+    <string name="change_password_title">Cambiar contraseña</string>
+    <string name="change_password_message">Ingrese su nueva contraseña.</string>
+    <string name="change_password_current">Contraseña actual</string>
+    <string name="change_password_new">Nueva contraseña</string>
+    <string name="change_password_repeat">Repetir contraseña</string>
+    <string name="change_password_success">Su contraseña ha sido cambiada.</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_pass_title">¿Olvidó su contraseña?</string>
+    <string name="forgot_pass_message">Ingrese su dirección de correo electrónico y le enviaremos un enlace para restablecer su contraseña.</string>
+    <string name="forgot_pass_success_message">Revise su correo electrónico y siga las instrucciones para restablecer su contraseña.</string>
+    <string name="forgot_pass_button">RESTABLECER CONTRASEÑA</string>
+
+    <!-- Redeem password -->
+    <string name="redeem_pass_title">Restablecer contraseña</string>
+    <string name="redeem_pass_message">Ingrese su nueva contraseña.</string>
+    <string name="redeem_pass_success_message">Su contraseña ha sido cambiada.</string>
+    <string name="redeem_pass_error_message">Verifique su enlace de reinicio. ¡Puede que necesites uno nuevo!</string>
+
+    <!-- New Movie -->
+    <string name="new_movie_title">Título *</string>
+    <string name="new_movie_subtitle">Subtítulo</string>
+    <string name="new_movie_actors">Actores (separados por comas) *</string>
+    <string name="new_movie_director">Director</string>
+    <string name="new_movie_date">Fecha de publicación</string>
+    <string name="new_movie_description">Descripción</string>
+    <string name="new_movie_images">Imágenes *</string>
+    <string name="new_movie_categories">Categorías *</string>
+    <string name="new_movie_header">NUEVO PELÍCULA</string>
+    <string name="new_movie_success_message">¡Ahora puedes compartir esta película!</string>
+
+    <!-- My Movies Tab -->
+    <string name="my_movies_tab_one">Mis película</string>
+    <string name="my_movies_tab_two">Actores</string>
+    <string name="my_movies_tab_three">Directores</string>
+    <string name="my_movies_empty_message">¡Aún no tienes ninguna película registrado!</string>
+    <string name="actors_empty_message">¡Aún no tienes ningún actor registrado!</string>
+    <string name="directors_empty_message">¡Aún no tienes ningún director registrado!</string>
+    <string name="my_movies_new_movie">NUEVO PELÍCULA</string>
+    <string name="my_movies_published_on">Publicado en:</string>
+
+    <!-- Notifications Tab -->
+    <string name="notification_empty_message">¡Aún no tienes ninguna notificaión!</string>
+
+</resources>

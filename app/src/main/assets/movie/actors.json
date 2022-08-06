@@ -1,0 +1,34 @@
+{
+  "totalItems": 8,
+  "totalPages": 4,
+  "currentPage": 1,
+  "perPage": 2,
+  "offset": 0,
+  "data": [
+    {
+      "id": 1,
+      "name": "Harrison Ford",
+      "image": "https://themoney.co/wp-content/uploads/2022/01/What-is-James-Cameron-2021-worth.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nicole Kidman",
+      "image": "https://www.thesun.co.uk/wp-content/uploads/2021/09/fe6f5259-0eb9-4beb-9120-c563b7c0cf64.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Al Pacino",
+      "image": "https://st.depositphotos.com/1814084/1609/i/600/depositphotos_16099989-stock-photo-al-pacino.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Robert De Niro",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Robert_De_Niro_KVIFF_portrait.jpg/640px-Robert_De_Niro_KVIFF_portrait.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Anne Hathaway",
+      "image": "https://www.unwomen.org/sites/default/files/Headquarters/Images/Sections/Partnerships/GoodwillAmbassadors/UNwomen_AH_Photo_400px.jpg"
+    }
+  ]
+}

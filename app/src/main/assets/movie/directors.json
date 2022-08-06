@@ -1,0 +1,34 @@
+{
+  "totalItems": 8,
+  "totalPages": 4,
+  "currentPage": 1,
+  "perPage": 2,
+  "offset": 0,
+  "data": [
+    {
+      "id": 1,
+      "name": "Martin Scorsese",
+      "image": "https://indiehoy.com/wp-content/uploads/2022/04/martin-scorsese.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Alfred Hitchcock",
+      "image": "https://api.time.com/wp-content/uploads/2015/08/hitchcock.jpeg?quality=85&w=648"
+    },
+    {
+      "id": 3,
+      "name": "Quentin Tarantino",
+      "image": "https://img.huffingtonpost.com/asset/6112da8f41000007af81dd6e.jpeg?cache=fgtbrqpoay&ops=scalefit_720_noupscale"
+    },
+    {
+      "id": 4,
+      "name": "Pedro Almodóvar",
+      "image": "https://hoy.com.do/wp-content/uploads/2016/05/Almodova.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Francis Ford Coppola",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Francis_Ford_Coppola_-1976_%28cropping%29.jpg/200px-Francis_Ford_Coppola_-1976_%28cropping%29.jpg"
+    }
+  ]
+}

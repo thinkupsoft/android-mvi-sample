@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name" translatable="false">TKUP MVI</string>
+    <string name="app_error">Something went wrong!</string>
+    <string name="app_503_error_title">We are currently not available.</string>
+    <string name="app_503_error_message">Please check back later!</string>
+    <string name="session_expired">Your session has expired!\nPlease sign in again</string>
+
+    <!-- Common -->
+    <string name="sign_in_uppercase">SIGN IN</string>
+    <string name="register_uppercase">REGISTER</string>
+    <string name="get_movie_uppercase">GET A MOVIE</string>
+    <string name="put_movie_uppercase">ADD A MOVIE</string>
+    <string name="explore_more_uppercase">EXPLORE MORE</string>
+    <string name="logout">LOGOUT</string>
+    <string name="save">SAVE</string>
+    <string name="next">NEXT</string>
+    <string name="well_done">WELL DONE!</string>
+    <string name="manually">MANUALLY</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="no_matches_search">No matches were found for your search</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="camera">CAMERA</string>
+    <string name="gallery">GALLERY</string>
+    <string name="success">Success!</string>
+    <string name="saving">Saving&#8230;</string>
+    <string name="no_data">No data</string>
+
+    <!-- Errors -->
+    <string name="invalid_name">Name can\'t be empty</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_password">Password must be 8 characters at least</string>
+    <string name="invalid_repeat_password">Passwords doesn\'t match</string>
+    <string name="invalid_username">Username can\'t be empty</string>
+    <string name="username_used">Username already in use</string>
+    <string name="required_field">Required field</string>
+    <string name="invalid_date">Invalid date</string>
+    <string name="required_field_one">Requires at least one</string>
+
+    <!-- Tabs -->
+    <string name="tab_home_name">Home</string>
+    <string name="tab_movies_name">Movies</string>
+    <string name="tab_notifications_name">Notifications</string>
+    <string name="tab_profile_name">Profile</string>
+
+    <!-- Home Tab -->
+    <string name="home_register_link1">Don\'t have an account?</string>
+    <string name="home_register_link2">Register</string>
+    <string name="home_empty_featured">We still don\'t have movies</string>
+    <string name="home_title_featured">Featured movies</string>
+    <string name="home_title_my_movies">My movies</string>
+
+    <!-- Profile Tab -->
+    <string name="profile_email">Email</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_last_login">Last login</string>
+    <string name="profile_change_password">CHANGE PASSWORD</string>
+    <string name="profile_delete_account">Delete account</string>
+    <string name="profile_logout_msg">Are you sure you want to logout?</string>
+    <string name="profile_success_msg">PROFILE UPDATED SUCCESSFULLY</string>
+
+    <!-- Login popup -->
+    <string name="login_forgot_pass">Forgot password?</string>
+    <string name="login_email_placeholder">Email</string>
+    <string name="login_password_placeholder">Password</string>
+    <string name="login_success">SIGN IN SUCCESSFULLY</string>
+    <string name="login_fail">SIGN IN FAILED</string>
+
+    <!-- Register popup -->
+    <string name="register_name_placeholder">Name</string>
+    <string name="register_email_placeholder">Email</string>
+    <string name="register_password_placeholder">Password</string>
+    <string name="register_repeat_password_placeholder">Repeat password</string>
+    <string name="register_success">REGISTER SUCCESSFULLY</string>
+    <string name="register_fail">REGISTER FAILED</string>
+
+    <!-- Edit profile -->
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="edit_profile_name_placeholder">Name</string>
+    <string name="edit_profile_username_placeholder">Username</string>
+    <string name="edit_profile_failed">EDIT FAILED</string>
+    <string name="edit_profile_success">PROFILE UPDATED SUCCESSFULLY</string>
+
+    <!-- Delete account -->
+    <string name="delete_account_title">Are you sure?</string>
+    <string name="delete_account_message">Your account will be deactivated immediately.\n\nThis action can\'t be undone.</string>
+    <string name="delete_account_button">DELETE ACCOUNT</string>
+
+    <!-- Change password -->
+    <string name="change_password_title">Change password</string>
+    <string name="change_password_message">Enter your new password.</string>
+    <string name="change_password_current">Current Password</string>
+    <string name="change_password_new">New Password</string>
+    <string name="change_password_repeat">Repeat Password</string>
+    <string name="change_password_success">Your password has been changed.</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_pass_title">Forgot password?</string>
+    <string name="forgot_pass_message">Enter your email address and we’ll send you a link to reset your password.</string>
+    <string name="forgot_pass_success_message">Check your email and follow the instructions to reset your password.</string>
+    <string name="forgot_pass_button">RESET PASSWORD</string>
+
+    <!-- Redeem password -->
+    <string name="redeem_pass_title">Reset password</string>
+    <string name="redeem_pass_message">Enter your new password.</string>
+    <string name="redeem_pass_success_message">Your password has been changed.</string>
+    <string name="redeem_pass_error_message">Check your reset link. You might need a new one!</string>
+
+    <!-- New Movie -->
+    <string name="new_movie_title">Title *</string>
+    <string name="new_movie_subtitle">Subtitle</string>
+    <string name="new_movie_actors">Actors (comma separated) *</string>
+    <string name="new_movie_director">Director</string>
+    <string name="new_movie_date">Publication date</string>
+    <string name="new_movie_description">Description</string>
+    <string name="new_movie_images">Images *</string>
+    <string name="new_movie_categories">Categories *</string>
+    <string name="new_movie_header">NEW MOVIE</string>
+    <string name="new_movie_success_message">Now you can share this movie!</string>
+
+    <!-- My Movies Tab -->
+    <string name="my_movies_tab_one">My Movies</string>
+    <string name="my_movies_tab_two">Actors</string>
+    <string name="my_movies_tab_three">Directors</string>
+    <string name="my_movies_empty_message">You don\'t have any movie registered yet!</string>
+    <string name="actors_empty_message">We don\'t have any actor registered yet!</string>
+    <string name="directors_empty_message">We don\'t have any director registered yet!</string>
+    <string name="my_movies_new_movie">NEW MOVIE</string>
+    <string name="my_movies_published_on">Published on:</string>
+
+    <!-- Notifications Tab -->
+    <string name="notification_empty_message">You don\'t have any notifications yet!</string>
+
+</resources>

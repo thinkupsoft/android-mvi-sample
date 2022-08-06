@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "title": "Pulp Fiction",
+  "subtitle": "",
+  "actors": "John Travolta, Uma Thurman, Samuel L. Jackson",
+  "director": "Quentin Tarantino",
+  "publication_date": "1994-01-01",
+  "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+  "active": true,
+  "createdAt": "2022-07-05T15:40:49.000Z",
+  "images": [
+    {
+      "image_url": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 14,
+      "name": "Crime",
+      "slug": "Crime"
+    },
+    {
+      "id": 3,
+      "name": "Drama",
+      "slug": "Drama"
+    }
+  ]
+}

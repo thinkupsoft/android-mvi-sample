@@ -1,0 +1,166 @@
+{
+  "totalItems": 8,
+  "totalPages": 4,
+  "currentPage": 1,
+  "perPage": 2,
+  "offset": 0,
+  "data": [
+    {
+      "id": 1,
+      "title": "Pulp Fiction",
+      "subtitle": "",
+      "actors": "John Travolta, Uma Thurman, Samuel L. Jackson",
+      "director": "Quentin Tarantino",
+      "publication_date": "1994-01-01",
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "active": true,
+      "createdAt": "2022-07-05T15:40:49.000Z",
+      "images": [
+        {
+          "image_url": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+        },
+        {
+          "image_url": "https://i.pinimg.com/564x/39/fe/d6/39fed65d818c32c51de99c2968af3113--quentin-tarantino-film-music-books.jpg"
+        }
+      ],
+      "categories": [
+        {
+          "id": 14,
+          "name": "Crime",
+          "slug": "Crime"
+        },
+        {
+          "id": 3,
+          "name": "Drama",
+          "slug": "Drama"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "subtitle": "",
+      "actors": "Marlon Brando, Al Pacino, James Caan",
+      "director": "Francis Ford Coppola",
+      "publication_date": "1972-01-01",
+      "description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
+      "active": true,
+      "createdAt": "2022-07-05T15:40:49.000Z",
+      "images": [
+        {
+          "image_url": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+        },
+        {
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShbel-rc6sY1FqqsT-yLk46k-9_h8L-ZflyEoQxSIVV9kjC5zR0BGhyf8NR1RJC4-UvOU&usqp=CAU"
+        },
+        {
+          "image_url": "https://timelinecovers.pro/facebook-cover/download/the-godfather5-facebook-cover.jpg"
+        }
+      ],
+      "categories": [
+        {
+          "id": 14,
+          "name": "Crime",
+          "slug": "Crime"
+        },
+        {
+          "id": 3,
+          "name": "Drama",
+          "slug": "Drama"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Psycho",
+      "subtitle": "",
+      "actors": "Anthony Perkins, Janet Leigh, Vera Miles",
+      "director": "Alfred Hitchcock",
+      "publication_date": "1960-09-08",
+      "description": "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.",
+      "active": true,
+      "createdAt": "2022-07-05T15:40:49.000Z",
+      "images": [
+        {
+          "image_url": "https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+        }
+      ],
+      "categories": [
+        {
+          "id": 14,
+          "name": "Horror",
+          "slug": "Horror"
+        },
+        {
+          "id": 3,
+          "name": "Mystery",
+          "slug": "Mystery"
+        },
+        {
+          "id": 30,
+          "name": "Thriller",
+          "slug": "Thriller"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Wolf of Wall Street",
+      "subtitle": "",
+      "actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
+      "director": "Martin Scorsese",
+      "publication_date": "2013-12-25",
+      "description": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+      "active": true,
+      "createdAt": "2022-07-05T15:40:49.000Z",
+      "images": [
+        {
+          "image_url": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg"
+        },
+        {
+          "image_url": "https://i.pinimg.com/originals/3c/b6/9d/3cb69d854ed606acddbe7acb60616339.jpg"
+        }
+      ],
+      "categories": [
+        {
+          "id": 14,
+          "name": "Biography",
+          "slug": "Biography"
+        },
+        {
+          "id": 3,
+          "name": "Comedy",
+          "slug": "Comedy"
+        },
+        {
+          "id": 30,
+          "name": "Crime",
+          "slug": "Crime"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Todo sobre mi madre",
+      "subtitle": "",
+      "actors": "Cecilia Roth, Marisa Paredes, Candela Peña, Antonia San Juan, Penélope Cruz",
+      "director": "Pedro Almodóvar",
+      "publication_date": "1999-12-08",
+      "description": "Manuela recibe un duro golpe y decide huir del presente refugiándose en el pasado. Viaja hasta Barcelona, de donde salió embarazada hace dieciocho años. Va en busca de Esteban, el padre de su hijo, quien nunca supo que Manuela había sido madre.",
+      "active": true,
+      "createdAt": "2022-07-05T15:40:49.000Z",
+      "images": [
+        {
+          "image_url": "https://c8.alamy.com/compes/efbdm0/poster-de-pelicula-todo-sobre-mi-madre-todo-sobre-mi-madre-1999-efbdm0.jpg"
+        }
+      ],
+      "categories": [
+        {
+          "id": 14,
+          "name": "Drama",
+          "slug": "Drama"
+        }
+      ]
+    }
+  ]
+}

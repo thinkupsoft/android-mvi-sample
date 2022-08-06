@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk versions.compileSdk
+    flavorDimensions flavors.environment
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    productFlavors {
+        production { dimension flavors.environment }
+        staging { dimension flavors.environment }
+        dev { dimension flavors.environment }
+    }
+}
+
+dependencies {
+    // Secure SP
+    implementation "androidx.datastore:datastore-preferences:$datastore_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_ktx_version"
+    // Retrofit
+    compileOnly "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    // Room
+    compileOnly "androidx.room:room-runtime:$room_version"
+    compileOnly "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    // Dagger
+    compileOnly "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+}

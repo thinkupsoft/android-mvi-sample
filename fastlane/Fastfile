@@ -1,0 +1,154 @@
+default_platform(:android)
+
+    before_all do |lane, options|
+        ENV['SLACK_URL'] = ENV.fetch('SLACK_URL')
+        ENV['APP_FLAVOR'] = ENV.fetch('APP_FLAVOR')
+        ENV['APP_NAME'] = ENV.fetch('APP_NAME')
+    end
+
+    # Constants
+    app_name = ENV['APP_NAME']
+    ## Slack uri to publish
+    slack_url = ENV['SLACK_URL']
+    ## Apps
+    app_flavor = ENV['APP_FLAVOR']
+    app_build_link = "https://appdistribution.firebase.google.com/testerapps/"
+
+    # ------------------
+    # Public Lanes
+    # ------------------
+
+    desc "Distribution Test Lane"
+    lane :release_app do |options|
+        flavor = (options[:flavor] || app_flavor).downcase
+
+        distribute(flavor: flavor)
+    end
+
+    # -------------
+    # Private lanes
+    # -------------
+
+    desc "Distribute the build"
+    private_lane :distribute do |options|
+        # Clean before build
+        gradle(
+            task: "clean"
+        )
+
+        gradle(
+            task: 'bundleRelease appDistributionUpload'+options[:flavor]+'Release'
+        )
+
+        # Sends the slack message
+        send_app_slack_message(options)
+    end
+
+    desc "Send APP Slack Message"
+    private_lane :send_app_slack_message do |options|
+        app_id = read_key_from_secure(options[:flavor])
+        slack(
+            slack_url: slack_url,
+            message: "New App release! :fire:",
+            success: true,
+            payload: {
+                "App Name" => app_name,
+                "Platform" => "Android",
+                "Version" => getAppVersion(options[:flavor]),
+                "Environment" => options[:flavor],
+                "Link" => app_build_link + app_id
+            },
+            default_payloads: [:git_author],
+            attachment_properties: {
+                thumb_url: "https://logodownload.org/wp-content/uploads/2015/05/android-logo-0-1.png"
+            }
+        )
+    end
+
+    # -------------
+    # Utils
+    # -------------
+
+    def self.getAppVersion(flavor)
+        realFlavor = "stg"
+        if flavor == "staging"
+            realFlavor = "stg"
+        elsif flavor == "production"
+            realFlavor = "prod"
+        else
+            realFlavor = "dev"
+        end
+        return read_key_from_gradle_file("../build.gradle", realFlavor)
+    end
+
+    def self.read_key_from_gradle_file(gradle_file, flavor)
+        keyName = flavor + "VersionName"
+        keySuffix = flavor + "VersionNameSuffix"
+
+        path = get_gradle_file_path(gradle_file)
+        value = ""
+        suffix = ""
+        hasApp = false
+        begin
+            file = File.new(path, "r")
+            while (line = file.gets)
+                unless hasApp
+                    next unless line.include? app
+                    hasApp = line.include? app
+                    next
+                else
+                    unless line.include? keyName or line.include? keySuffix
+                        next
+                    end
+                    if value == "" or suffix == ""
+                        if line.include? keyName and value == ""
+                            components = line.strip.split(':')
+                            value = components[components.length - 1].tr("\"", "").tr(",", "").tr(" ", "")
+                        end
+                        if line.include? keySuffix  and suffix == ""
+                            components = line.strip.split(':')
+                            suffix = components[components.length - 1].tr("\"", "").tr(",", "").tr(" ", "")
+                        end
+                        next
+                    end
+                end
+                break
+            end
+            file.close
+        rescue => err
+            UI.error("Something went wrong while reading gradle file: #{err}")
+            err
+        end
+        return value.to_s + suffix.to_s
+    end
+
+    def self.get_gradle_file_path(gradle_file)
+        return File.expand_path(gradle_file).shellescape
+    end
+
+    def self.read_key_from_secure(flavor)
+        path = get_gradle_file_path("../secure.properties")
+        realFlavor = "STG"
+        if flavor == "staging"
+            realFlavor = "STG"
+        elsif flavor == "production"
+            realFlavor = "PROD"
+        else
+            realFlavor = "DEV"
+        end
+        keyName = 'APP_'+ realFlavor + '_FIREBASE_ID'
+        value = ""
+        begin
+            file = File.new(path, "r")
+            while (line = file.gets)
+                unless line.include? keyName
+                    next
+                else
+                    value = line.split("=")[1]
+                    break
+                end
+            end
+            file.close
+        end
+        return value
+    end

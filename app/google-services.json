@@ -1,0 +1,301 @@
+{
+  "project_info": {
+    "project_number": "1054498708478",
+    "firebase_url": "https://thinkup-35d2b.firebaseio.com",
+    "project_id": "thinkup-35d2b",
+    "storage_bucket": "thinkup-35d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:0dd07c23bcb7c9657ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.aos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:344bfac15e5255477ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.libs.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:8c18488d9c700e6b7ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.libs.sample.develop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:c03cd42f92b182df7ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.libs.sample.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:882184166ccff5437ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.mvi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:eb3377965db00af27ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.mvi.develop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:e7af63aa99d731627ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.mvi.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:dc03da5adc4523227ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.mvvmsample.develop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:8f9ea4f8247eb3e67ebeaf",
+        "android_client_info": {
+          "package_name": "com.thinkup.proof"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054498708478:android:58cdf43b0c8216ca7ebeaf",
+        "android_client_info": {
+          "package_name": "com.twilio.voice.quickstart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054498708478-iko106fllu7pig4fifvebgergprph8qq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPnZJ7SHMEjxAll7TfhFC7FMpOVZw4l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054498708478-5tgcclu73vieu7n9obvmpelhpomqg554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
