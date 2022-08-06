@@ -114,7 +114,7 @@ Make a copy of the `.env.example` file into the fastlane folder and rename it to
 APP_NAME="[app name]" --> Put your app name. Ex: TestApp
 APP_FLAVOR="[develop | staging | production]" --> Choose your default environment. Ex: staging
 FIREBASE_CLI_TOKEN="[firebase token to upload]" --> Check the code below to generate it.
-SLACK_URL="[slack webhook to post success message]" --> Use always the same. https://hooks.slack.com/services/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
+SLACK_URL="[slack webhook to post success message]" --> Use always the same.
 ```
 
 Finally, sign in to your Google Account via the plugin's login action. Check how do it [here](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane?authuser=0&apptype=apk#google-acc-fastlane).            
