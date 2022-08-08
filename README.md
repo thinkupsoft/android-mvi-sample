@@ -19,6 +19,16 @@ We start from the scratch using a template project with the following characteri
 if you want to run the app directly from the code remember ask to your ThinkUp contact for the remaining files to complete the configuration.
 However, if you just would like take a tour from the app can you join to te open testing canal (here)[https://play.google.com/apps/testing/com.thinkup.mvi.staging]
 
-## References
+## Demo
+
+<p align="center">
+  <img src="docs/gifmvi1.gif" width="32%"/>
+  <img src="docs/gifmvi2.gif" width="32%"/>
+</p>
+
+<p align="center">
+  <img src="docs/gifmvi3.gif" width="32%"/>
+  <img src="docs/gifmvi4.gif" width="32%"/>
+</p>
 
 
