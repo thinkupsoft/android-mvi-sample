@@ -17,7 +17,7 @@ We start from the scratch using a template project with the following characteri
 ## Setup
 
 if you want to run the app directly from the code remember ask to your ThinkUp contact for the remaining files to complete the configuration.
-However, if you just would like take a tour from the app can you join to te open testing canal (here)[https://play.google.com/apps/testing/com.thinkup.mvi.staging]
+However, if you just would like take a tour from the app can you join to te open testing canal [here](https://play.google.com/apps/testing/com.thinkup.mvi.staging)
 
 ## Demo
 
